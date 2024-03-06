@@ -7,3 +7,12 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+Restaurant.destroy_all
+
+
+dishoom = Restaurant.new(name: "Dishoom", address: "7 Boundary St, London E2 7JE", phone_number: "0123456789", category: "chinese")
+pizza_east =  Restaurant.new(name: "Pizza East", address: "56A Shoreditch High St, London E1 6PQ", phone_number: "0123456789", category: "italian")
+sushi_bowl = Restaurant.new(name: "Sushi Bowl", address: "Pidally Circus, London E2 7JE", phone_number: "0123456789", category: "japanese")
+bistrot_louis =  Restaurant.new(name: "Bistrot Louis", address: "Champs-Elysee, Paris", phone_number: "0123456789", category: "french")
+waffle_house = Restaurant.new(name: "Waffle House", address: "7 Boundary St, Brussels", phone_number: "0123456789", category: "belgian")
